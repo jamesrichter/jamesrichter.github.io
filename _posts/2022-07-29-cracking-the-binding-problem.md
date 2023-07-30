@@ -41,6 +41,9 @@ Let’s consider two objects, a rose on a rosebush and a distant mountain.
 
 | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image1.jpg) |
 | ------------- | ------------- |
+
+
+
 ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)
 ![Mountain](https://jamesrichter.github.io/docs/assets/images/image1.png)
 
