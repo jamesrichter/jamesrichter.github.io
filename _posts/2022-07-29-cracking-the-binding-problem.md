@@ -51,7 +51,7 @@ Once you comprehend the color, shape, and texture of an object, you’ve got the
 
 We’ve already been over this property, but I think it’s worth repeating:
 
-Objects are useful for comprehending the world around us.  The entire visual world can be comprised of objects.
+**Objects are useful for comprehending the world around us.  The entire visual world can be comprised of objects.**
 
 This is more about what objects are and what they’re used for, but I think it’s worth mentioning since it is a property of all objects: every object we see helps us comprehend the visual world, and if you take one away, then we understand a little less.  This may sound a little tautological.
 
@@ -80,6 +80,7 @@ For a toy example like this, frame subtraction works great, but what about a mor
 It could still be possible with more sophisticated eye movement, which is why I’m not sure.
 
 The last two properties are the crux of our algorithm, and the first one I’m almost positive applies to all objects. (The second one I can think of some counterexamples, but they are all abstract objects like “words” or "collections")
+
 It is easier to predict a masked part of the object given the rest of the object than given the rest of the outside world.
 
 For example, predicting a small region (shown in red and blue) inside a single rose flower given the rest of the rose is easy, but predicting the same region given the rest of the rosebush is hard.  However, it is possible to make a good guess from the “outside world” due to the fact that context clues can help. In this case, the outside world gives us the stem leading up to the rose, and the color of other roses on the bush, and whether those roses are in bloom.  From here, we could guess that the masked region would be “pink,” but we don’t really know exactly which shade of pink.
