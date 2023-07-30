@@ -81,7 +81,7 @@ It could still be possible with more sophisticated eye movement, which is why I�
 
 The last two properties are the crux of our algorithm, and the first one I’m almost positive applies to all objects. (The second one I can think of some counterexamples, but they are all abstract objects like “words” or "collections")
 
-#### It is easier to predict a masked part of the object given the rest of the object than given the rest of the outside world.
+#### It is easier to predict a masked part of the object given the rest of the object, than given the rest of the outside world.
 
 For example, predicting a small region (shown in red and blue) inside a single rose flower given the rest of the rose is easy, but predicting the same region given the rest of the rosebush is hard.  However, it is possible to make a good guess from the “outside world” due to the fact that context clues can help. In this case, the outside world gives us the stem leading up to the rose, and the color of other roses on the bush, and whether those roses are in bloom.  From here, we could guess that the masked region would be “pink,” but we don’t really know exactly which shade of pink.
 
@@ -101,36 +101,3 @@ By “completely connected” I mean that we can trace a path from any object pi
 
 
 
-
-## Blog Post Title From First Header
-
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
-
-If the file does not start with a header, then the post title will be derived from the filename.
-
-This is a sample blog post. You can talk about all sorts of fun things here.
-
----
-
-### This is a header
-
-#### Some T-SQL Code
-
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
-```
-
-#### Some PowerShell Code
-
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
-```
