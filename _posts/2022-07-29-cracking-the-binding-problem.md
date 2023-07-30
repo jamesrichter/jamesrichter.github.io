@@ -18,19 +18,19 @@ Even though this is a learned process, there are still priors, at least for huma
 Having evidence that this is a learned process in humans gives us confidence that we can have the computer learn the same process.  However, even though we know the object binding process is learned, we don’t know how it is done (either the binding process itself, or the learning of the process).  One natural follow-up is to turn inwardly, look at an object, and say to ourselves, “How do I know that what I’m looking at is indeed an object?  What’s an object, anyway?”
 
 What is an object?
-A discrete chunk of stuff that acts on its own.  For example, a ball.  I could conceivably throw the ball, and it would move on its own.  
-Not all objects necessarily move. Something like a fire hydrant you would never see move, but still counts as an object.  However, due to the magic of parallax, we can still visually distinguish movement of the fire hydrant, not because of the hydrant moving, but because of the way the observing eye moves.
+In real life, an object is a discrete chunk of stuff that acts on its own.  For example, a ball.  I could conceivably throw the ball, and it would move on its own through real space, possibly interacting with other objects.  
+However, not all objects necessarily move. Something like a fire hydrant you would never see move, but still counts as an object.  However, due to the magic of parallax, we can still visually distinguish movement of the fire hydrant, not because of the hydrant moving, but because of the way the observing eye moves.
 In the visual world, background elements like clouds, mountains, sky can also be objects.  This is a convenient definition because it lets us assign any pixel in our visual world to an object, even if it’s part of the background.
-If we are using movement as our basis for distinguishing objects, we can’t determine the objectness of background elements that don’t move.  However, I still believe that motion is important for distinguishing objects, as it can be a “dead giveaway” when one object moves independently of the rest of the visual world.
+If we are using movement as our basis for distinguishing objects, we may not be able to determine the objectness of background elements that don’t move.  However, I still believe that motion is important for distinguishing objects, as it can be a “giveaway” when one object moves independently of the rest of the visual world.
 As a side note, some datasets such as coloured Multi-dSprites (Burgess et al., 2019) and CLEVR only use static images, whereas others such as the GQN dataset (Eslami et al., 2018), and ShapeStacks (Groth et al., 2018) use video. Our algorithm should be good at both.
 
-Why is it an advantage to see the world in terms of objects?  It is an advantage to lump stuff together based on like properties.  It’s easier on the brain to think of a thousand objects, each with their own consistent properties, than one large visual field-sized object or one hundred million pixel-sized objects.
+Why is it an advantage to see the visual world in terms of objects?  It is an advantage to lump stuff together based on like properties.  It’s easier on the brain to think of a thousand objects, each with their own consistent properties, than one large visual field-sized object or one hundred million pixel-sized objects.
 
 What are some properties that apply to all objects?  If we didn’t know that objects exist in the first place, how could we find them with no prior knowledge?  
 
 It is surprisingly difficult to find properties that apply to all objects, so let’s relax our standards and try to find properties that apply to *almost all* objects.  We should be able to live our lives for several months without coming across an object that violates these properties.  I should also warn you that this is not a topic that I have found studied anywhere, so a lot of this is just guesswork by me + thinking about objects a lot.  But I still believe it is useful.
 
-Let’s consider two objects, a rose on a rosebush and a distant mountain.
+Consider two objects, a rose on a rosebush and a distant mountain.
 
 <p float="left">
   <img src="https://jamesrichter.github.io/docs/assets/images/image2.jpg" width="300" height="250" />
