@@ -86,8 +86,15 @@ The last two properties are the crux of our algorithm, and the first one I’m a
 For example, predicting a small region (shown in red and blue) inside a single rose flower given the rest of the rose is easy, but predicting the same region given the rest of the rosebush is hard.  However, it is possible to make a good guess from the “outside world” due to the fact that context clues can help. In this case, the outside world gives us the stem leading up to the rose, and the color of other roses on the bush, and whether those roses are in bloom.  From here, we could guess that the masked region would be “pink,” but we don’t really know exactly which shade of pink.
 
 
-| ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image3.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image4.jpg) |
-| ------------- | ------------- |
+
+<p float="left">
+  <img src="https://jamesrichter.github.io/docs/assets/images/image3.jpg" width="300" />
+  <img src="https://jamesrichter.github.io/docs/assets/images/image4.jpg" width="300" /> 
+</p>
+
+
+// | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image3.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image4.jpg) |
+// | ------------- | ------------- |
 
 In this set of two images, the region covered by the blue square is much easier to imagine in the first image than the second.
 
