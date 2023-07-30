@@ -33,8 +33,8 @@ It is surprisingly difficult to find properties that apply to all objects, so le
 Let’s consider two objects, a rose on a rosebush and a distant mountain.
 
 <p float="left">
-  <img src="https://jamesrichter.github.io/docs/assets/images/image2.jpg" width="300" height="300" />
-  <img src="https://jamesrichter.github.io/docs/assets/images/image1.png" width="300" height="300" /> 
+  <img src="https://jamesrichter.github.io/docs/assets/images/image2.jpg" width="300" height="250" />
+  <img src="https://jamesrichter.github.io/docs/assets/images/image1.png" width="300" height="250" /> 
 </p>
 
 
