@@ -97,7 +97,8 @@ The last property:
 
 #### All of the pixels in an object are completely connected unless occluded by another object.
 
-By “completely connected” I mean that we can trace a path from any object pixel to any other object pixel without going through non-object pixels.  The only exception to this that I’m aware of is abstract objects like words, which have space between the letters but due to Gestalt psychology are comprehended as one object.
+By “completely connected” I mean that we can trace a path from any object pixel to any other object pixel without going through non-object pixels.  The only exception to this that I’m aware of is abstract objects like words, which have space between the letters but due to Gestalt psychology are comprehended as one object.  The other, more obvious exception, is when one object is occluded visually by another.  This is such an important case that I have incorporated it into the rule itself.
+
 
 
 
