@@ -1,4 +1,4 @@
-The Binding Problem
+## **The Binding Problem**
 
 People, when they look at the world around them, see in terms of objects- a tree, a bench, a table, a cloud.  This is a great way to look at the world and most people take their ability to do it for granted.  Computers can't do this at a human level, yet, but there are several approaches that people have tried.  One way is to train the computer on a certain class of object, say a fire hydrant.  And if you do this enough times for enough objects, you can eventually get the computer to see a lot of objects.  Some computers can also use segmentation algorithms that break the entire visual field into objects and are trained on images with the objects labeled, like Segment Anything. Some of these algorithms even learn to see the world of objects using unlabeled video image training data (the same way a human would.)  The most promising of these are based on VAEs, like Genesis, SPACE, etc. but they all have shortcomings which I will talk about in a later post.
 
@@ -41,27 +41,27 @@ Consider two objects, a rose on a rosebush and a distant mountain.
 When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  However, if you're learning to separate the visual world into objects, these are less helpful.  Color and texture distinguish a rose from the leaves of the rosebush, but they don't distinguish the distant mountain from the horizon.  Shape distinguishes the mountain; in other words, the mountain is shaped differently than the horizon.  However, if we're trying to discover objects from an image of pixels, we don't yet know which pixels comprise which objects.  So we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
 
 One property we can get is this: 
-Objects have their own color, and while those colors can change over time, they generally don’t change very quickly.
+#### Objects have their own color, and while those colors can change over time, they generally don’t change very quickly.
 
 Objects that change their color include leaves on a tree, and indeed, a rosebush.  However, these colors generally don’t change while we’re looking at them; the exception being when an object is undergoing some kind of chemical reaction, or is a chameleon.  I believe that texture and shape follow a similar vein as color:
 
-Objects have their own shape and texture, and while those can change over time, they generally don’t change very quickly.
+#### Objects have their own shape and texture, and while those can change over time, they generally don’t change very quickly.
 
 Once you comprehend the color, shape, and texture of an object, you’ve got the object down.  This doesn’t really help us learn to see objects for the first time, though many traditional segmentation algorithms (ex. Felzenszwalb-Huttenlocher segmentation) end up separating color and shape.
 
-We’ve already been over this property, but I think it’s worth repeating:
+I've already discussed the following property, but I think it’s worth repeating:
 
-**Objects are useful for comprehending the world around us.  The entire visual world can be comprised of objects.**
+#### **Objects are useful for comprehending the world around us.  The entire visual world can be comprised of objects.**
 
 This is more about what objects are and what they’re used for, but I think it’s worth mentioning since it is a property of all objects: every object we see helps us comprehend the visual world, and if you take one away, then we understand a little less.  This may sound a little tautological.
 
 Here’s another property that has to do with movement:
 
-Objects move slowly (an object in one frame contains most of the object in the next frame)
+#### Objects move slowly (an object in one frame contains most of the object in the next frame)
 
 How many FPS a human can see is a subject of debate, especially among gamers, but let’s say the human sees at 144 Hz.  Most objects don’t move this quickly.  Exceptions are things like lightning, and possibly a fastball? (On the other hand, there are people who get paid to track and hit fastballs with a wooden bat, so maybe it’s not outside the realm of human visualization after all)  Generally, the eye moves much faster than most objects, which is good for our object perception because the eye’s movement can be predicted perfectly.
 
-Objects move together, and independently of the outside environment.
+#### Objects move together, and they move independently of the outside environment.
 
 This is the one I’m least sure of.  Well, I am sure that the pixels in an object move together, and that how an object moves is a distinctive characteristic that humans take advantage of, since the structure in the brain for distinguishing the movement of an object is the same as for distinguishing personality. But I’m not sure that objects move independently of the visual environment.  For the rose, and the fire hydrant, a human moving around the object can determine the object through parallax.  For a 2D video game like Super Mario Bros, parallax is useless, but most of the objects in the game still move on their own. For both the parallax case and the video game, the human can stimulate independent motion of the object.  But what about the mountain in the distance?
 
@@ -81,7 +81,7 @@ It could still be possible with more sophisticated eye movement, which is why I�
 
 The last two properties are the crux of our algorithm, and the first one I’m almost positive applies to all objects. (The second one I can think of some counterexamples, but they are all abstract objects like “words” or "collections")
 
-It is easier to predict a masked part of the object given the rest of the object than given the rest of the outside world.
+#### It is easier to predict a masked part of the object given the rest of the object than given the rest of the outside world.
 
 For example, predicting a small region (shown in red and blue) inside a single rose flower given the rest of the rose is easy, but predicting the same region given the rest of the rosebush is hard.  However, it is possible to make a good guess from the “outside world” due to the fact that context clues can help. In this case, the outside world gives us the stem leading up to the rose, and the color of other roses on the bush, and whether those roses are in bloom.  From here, we could guess that the masked region would be “pink,” but we don’t really know exactly which shade of pink.
 
@@ -95,7 +95,7 @@ In this set of two images, the region covered by the blue square is much easier 
 
 The last property:
 
-All of the pixels in an object are completely connected unless occluded by another object.
+#### All of the pixels in an object are completely connected unless occluded by another object.
 
 By “completely connected” I mean that we can trace a path from any object pixel to any other object pixel without going through non-object pixels.  The only exception to this that I’m aware of is abstract objects like words, which have space between the letters but due to Gestalt psychology are comprehended as one object.
 
