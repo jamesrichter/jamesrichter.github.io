@@ -28,7 +28,7 @@ Why is it an advantage to see the visual world in terms of objects?  It is an ad
 
 What are some properties that apply to all objects?  If we didn’t know that objects exist in the first place, how could we find them with no prior knowledge?  
 
-It is surprisingly difficult to find properties that apply to all objects, so let’s relax our standards and try to find properties that apply to *almost all* objects.  We should be able to live our lives for several months without coming across an object that violates these properties.  I should also warn you that this is not a topic that I have found studied anywhere, so a lot of this is just guesswork by me + thinking about objects a lot.  But I still believe it is useful.
+It is surprisingly difficult to find properties that apply to all objects, so let’s relax our standards and try to find properties that apply to *almost all* objects.  We should be able to live our lives for several months without coming across an object that violates these properties.  I should also warn you that this is not a topic that I have found studied anywhere, so a lot of this is just guesswork by me.
 
 Consider two objects, a rose on a rosebush and a distant mountain.
 
@@ -38,16 +38,16 @@ Consider two objects, a rose on a rosebush and a distant mountain.
 </p>
 
 
-When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  But this doesn’t apply to *all* objects.  Color and texture distinguish a rose, but not a distant mountain.  Shape distinguishes the mountain, but we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
+When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  However, if you're learning to separate the visual world into objects, these are less helpful.  Color and texture distinguish a rose from the leaves of the rosebush, but they don't distinguish the distant mountain from the horizon.  Shape distinguishes the mountain; in other words, the mountain is shaped differently than the horizon.  However, if we're trying to discover objects from an image of pixels, we don't yet know which pixels comprise which objects.  So we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
 
-However, one property we can get is this: 
+One property we can get is this: 
 Objects have their own color, and while those colors can change over time, they generally don’t change very quickly.
 
 Objects that change their color include leaves on a tree, and indeed, a rosebush.  However, these colors generally don’t change while we’re looking at them; the exception being when an object is undergoing some kind of chemical reaction, or is a chameleon.  I believe that texture and shape follow a similar vein as color:
 
 Objects have their own shape and texture, and while those can change over time, they generally don’t change very quickly.
 
-Once you comprehend the color, shape, and texture of an object, you’ve got the object down.  This doesn’t really help us learn to see objects for the first time, though: or does it??  Many traditional segmentation algorithms rely on separating color and shape (not so much texture).
+Once you comprehend the color, shape, and texture of an object, you’ve got the object down.  This doesn’t really help us learn to see objects for the first time, though many traditional segmentation algorithms (ex. Felzenszwalb-Huttenlocher segmentation) end up separating color and shape.
 
 We’ve already been over this property, but I think it’s worth repeating:
 
