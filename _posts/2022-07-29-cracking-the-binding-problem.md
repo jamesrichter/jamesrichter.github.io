@@ -19,7 +19,7 @@ Having evidence that this is a learned process in humans gives us confidence tha
 
 What is an object?
 In real life, an object is a discrete chunk of stuff that acts on its own.  For example, a ball.  I could conceivably throw the ball, and it would move on its own through real space, possibly interacting with other objects.  
-However, not all objects necessarily move. Something like a fire hydrant you would never see move, but still counts as an object.  However, due to the magic of parallax, we can still visually distinguish movement of the fire hydrant, not because of the hydrant moving, but because of the way the observing eye moves.
+However, not all objects necessarily move. Something like a fire hydrant you would never see move, but still counts as an object.  Due to the magic of parallax, we can still visually distinguish movement of the fire hydrant, not because of the hydrant moving, but because of the way the observing eye moves.
 In the visual world, background elements like clouds, mountains, sky can also be objects.  This is a convenient definition because it lets us assign any pixel in our visual world to an object, even if it’s part of the background.
 If we are using movement as our basis for distinguishing objects, we may not be able to determine the objectness of background elements that don’t move.  However, I still believe that motion is important for distinguishing objects, as it can be a “giveaway” when one object moves independently of the rest of the visual world.
 As a side note, some datasets such as coloured Multi-dSprites (Burgess et al., 2019) and CLEVR only use static images, whereas others such as the GQN dataset (Eslami et al., 2018), and ShapeStacks (Groth et al., 2018) use video. Our algorithm should be good at both.
@@ -38,7 +38,7 @@ Consider two objects, a rose on a rosebush and a distant mountain.
 </p>
 
 
-When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  However, if you're learning to separate the visual world into objects, these are less helpful.  Color and texture distinguish a rose from the leaves of the rosebush, but they don't distinguish the distant mountain from the horizon.  Shape distinguishes the mountain; in other words, the mountain is shaped differently than the horizon.  However, if we're trying to discover objects from an image of pixels, we don't yet know which pixels comprise which objects.  So we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
+When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  However, if you're learning to separate the visual world into objects, these are less helpful.  Color and texture distinguish a rose from the leaves of the rosebush, but they don't distinguish the distant mountain from the horizon.  Shape distinguishes the mountain; in other words, the mountain is shaped differently than the horizon.  But if we're trying to discover objects from an image of pixels, we don't yet know which pixels comprise which objects.  So we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
 
 One property we can get is this: 
 1. Objects have their own color, and while those colors can change over time, they generally don’t change very quickly.
