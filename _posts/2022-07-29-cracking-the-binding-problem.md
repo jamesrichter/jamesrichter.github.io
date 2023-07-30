@@ -92,11 +92,7 @@ For example, predicting a small region (shown in red and blue) inside a single r
   <img src="https://jamesrichter.github.io/docs/assets/images/image4.jpg" width="300" /> 
 </p>
 
-
-// | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image3.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image4.jpg) |
-// | ------------- | ------------- |
-
-In this set of two images, the region covered by the blue square is much easier to imagine in the first image than the second.
+In this set of two images, the region covered by the blue square is much easier to predict in the first image than in the second.
 
 
 
