@@ -39,13 +39,10 @@ Let’s consider two objects, a rose on a rosebush and a distant mountain.
 
 
 
-| ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg) |
+| ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)  | ![mountain](https://jamesrichter.github.io/docs/assets/images/image1.png) |
 | ------------- | ------------- |
 ---
 
-
-![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)
-![Mountain](https://jamesrichter.github.io/docs/assets/images/image1.png)
 
 When you’re looking at an object, you generally recognize it because it is a different color, shape, or texture than its surroundings.  But this doesn’t apply to *all* objects.  Color and texture distinguish a rose, but not a distant mountain.  Shape distinguishes the mountain, but we need a definition of shape that doesn’t preclude that we know which pixels comprise the mountain.
 
