@@ -1,8 +1,5 @@
 The Binding Problem
 
-| ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image2.jpg) |
-| ------------- | ------------- |
-
 People, when they look at the world around them, see in terms of objects- a tree, a bench, a table, a cloud.  This is a great way to look at the world and most people take their ability to do it for granted.  But computers can’t do this yet.  Sometimes, if you train a computer hard enough, you can get the computer to see a certain class of object, say a fire hydrant.  And if you do this enough times for enough objects, you can eventually get the computer to see more objects.  Some computers can also use segmentation algorithms that break the entire visual field into objects, but none** of these algorithms learn to see the world of objects using unsupervised video image training data (the same way a human would.)
 
 ** There are actually a handful of algorithms that do this, the most promising of which are based on VAEs, like Genesis, SPACE, etc. but they all have shortcomings which I will talk about in a later post
@@ -90,8 +87,8 @@ It is easier to predict a masked part of the object given the rest of the object
 For example, predicting a small region (shown in red and blue) inside a single rose flower given the rest of the rose is easy, but predicting the same region given the rest of the rosebush is hard.  However, it is possible to make a good guess from the “outside world” due to the fact that context clues can help. In this case, the outside world gives us the stem leading up to the rose, and the color of other roses on the bush, and whether those roses are in bloom.  From here, we could guess that the masked region would be “pink,” but we don’t really know exactly which shade of pink.
 
 
-![Mountain](https://jamesrichter.github.io/docs/assets/images/image3.jpg)
-![Mountain](https://jamesrichter.github.io/docs/assets/images/image4.jpg)
+| ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image3.jpg)  | ![rose on rosebush](https://jamesrichter.github.io/docs/assets/images/image4.jpg) |
+| ------------- | ------------- |
 
 In this set of two images, the region covered by the blue square is much easier to imagine in the first image than the second.
 
