@@ -69,9 +69,9 @@ This is the one I’m least sure of.  Well, I am sure that the pixels in an obje
 
 ![Mountain](https://jamesrichter.github.io/docs/assets/images/image1.png)
 
-![Mountain](https://jamesrichter.github.io/docs/assets/images/image5.png)
-
 If the human moves their eye a very small amount parallel to the horizon, and we take the difference between two frames, we get this:
+
+![Mountain](https://jamesrichter.github.io/docs/assets/images/image5.png)
 
 This is the absolute difference between two frames in RGB color space.  Because most of the pixels are the same, the difference is (0,0,0), or black.  But the area around the mountain is the light blue color minus the dark blue color, which ends up being (41, 71, 44).  This frames the mountain perfectly.
 For a toy example like this, frame subtraction works great, but what about a more realistic mountain background?
