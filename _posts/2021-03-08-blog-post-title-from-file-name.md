@@ -1,6 +1,6 @@
 The Binding Problem
 
-![Mountain](../docs/assets/images/image1.png)
+![Mountain](https://jamesrichter.github.io/docs/assets/images/image1.png)
 
 People, when they look at the world around them, see in terms of objects- a tree, a bench, a table, a cloud.  This is a great way to look at the world and most people take their ability to do it for granted.  But computers can’t do this yet.  Computers still see the world in terms of pixels.  Sometimes, if you train a computer hard enough, you can get the computer to see a certain class of object, say a fire hydrant.  And if you do this enough times for enough objects, you can eventually get the computer to see more objects.  Some computers can also use segmentation algorithms that break the entire visual field into objects, but none** of these algorithms learn to see the world of objects using unsupervised video image training data (the same way a human would.)
 
